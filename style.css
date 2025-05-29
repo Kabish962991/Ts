@@ -1,0 +1,41 @@
+body {
+  background: #1a1a1a;
+  color: #eee;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+h1, h2 {
+  color: #ff6347;
+}
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+button {
+  background: #ff6347;
+  color: white;
+  border: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+}
+.login-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+}
+.login-box {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+}

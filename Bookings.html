@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TurfStar Bookings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>TurfStar Booking Admin</h1>
+  <input type="text" id="searchBox" placeholder="Search by Mobile Number" onkeyup="searchBooking()">
+
+  <div class="form-container">
+    <input type="text" id="teamName" placeholder="Team Name">
+    <input type="number" id="advancePay" placeholder="Advance Payment ₹">
+    <select id="hours">
+      <option value="1">1 Hour</option>
+      <option value="2">2 Hours</option>
+      <option value="3">3 Hours</option>
+      <option value="4">4 Hours</option>
+    </select>
+    <input type="time" id="bookingTime">
+    <input type="text" id="mobileNumber" placeholder="Mobile Number">
+    <input type="text" id="parking" placeholder="Vehicle Details">
+    <input type="text" id="tokenNumber" placeholder="Token Number">
+    <select id="beverages">
+      <option value="Yes">Beverages: Yes</option>
+      <option value="No">Beverages: No</option>
+    </select>
+    <button onclick="addBooking()">Add Booking</button>
+  </div>
+
+  <h2>Bookings List</h2>
+  <table id="bookingTable">
+    <thead>
+      <tr>
+        <th>Team</th><th>Advance</th><th>Hours</th><th>Time</th><th>Mobile</th>
+        <th>Parking</th><th>Token</th><th>Beverages</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
